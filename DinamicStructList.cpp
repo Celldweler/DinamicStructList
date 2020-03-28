@@ -7,16 +7,14 @@ struct List
 	int x;
 	List* Next;
 };
-
-
 int main(int argc, char** argv)
 {
 	SetConsoleOutputCP(1251);
-	SetConsoleCP(1251);//SymbolTypeShuvi
+	SetConsoleCP(1251);
 	setlocale(0, "");
 
 	List* Begin = nullptr;
-	char Key;
+	char Key{};
 	bool flag = false;
 	while (TRUE)
 	{
@@ -115,7 +113,8 @@ int main(int argc, char** argv)
 			cout << "\n\nPress any key to return in the menu...\n";
 			getchar();
 			system("cls");
-			break;
+			if (Begin!=nullptr)
+				FreeList(&Begin);
 			break;
 		}
 	}
