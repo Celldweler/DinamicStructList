@@ -1,5 +1,8 @@
-﻿#include"Stdafx.h"
+﻿
+#include"Stdafx.h"
 #pragma warning(disable : 4996)
+#include<algorithm>
+#include<ctime>
 
 using namespace std;
 struct List
@@ -7,6 +10,7 @@ struct List
 	int x;
 	List* Next;
 };
+
 int main(int argc, char** argv)
 {
 	SetConsoleOutputCP(1251);
