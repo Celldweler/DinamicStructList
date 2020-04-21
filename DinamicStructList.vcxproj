@@ -148,8 +148,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DinamicStructList.cpp" />
+    <ClCompile Include="FuncDLCList.cpp" />
+    <ClCompile Include="FuncDL_List.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DL_List.h" />
+    <ClInclude Include="ListDLC.h" />
     <ClInclude Include="Stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
